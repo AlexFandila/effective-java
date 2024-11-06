@@ -4,7 +4,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * Representation of Car model using de builder pattern
+ * 
  * @author alex
+ * @version 1.0
+ * @since 2024-02-11
  */
 @Getter
 @Setter
@@ -16,7 +20,6 @@ public class Car {
 	private double engineSize;
 	private boolean isElectric;
 
-	// TODO car builder
 	private Car(CarBuilder builder) {
 		this.make = builder.make;
 		this.model = builder.model;
